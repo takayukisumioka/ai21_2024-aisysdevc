@@ -10,6 +10,7 @@ export const App = () => {
             <h1>こんにちは！</h1>
             <p>おげんきですか？</p>
             <button onClick={onClickButton}>ボタン</button>
+            <button onClick={() => {alert("ボタン2")}}>ボタン2</button>
         </>
     )
 }
