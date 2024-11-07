@@ -9,7 +9,7 @@ export const App = () => {
     return (
         <>
             <h1 style={{color: "red"}}>こんにちは！</h1>
-            <ColoredMessage />
+            <ColoredMessage color="blue" message="お元気ですか？" />
             <button onClick={onClickButton}>ボタン</button>
             <button onClick={() => {alert("ボタン2")}}>ボタン2</button>
         </>
