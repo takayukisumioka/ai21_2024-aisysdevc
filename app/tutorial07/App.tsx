@@ -10,8 +10,11 @@ export const App = () => {
     }
 
     const onClickButton2 = () => {
-        setNum(num + 1)
-        setNum(num + 1)
+        // setNum(num + 1) 引数を値で渡すと
+        // setNum(num + 1) 関数生成時の変数の値が使われる
+
+        setNum((num) => num + 1) // 引数に関数の形で渡すと
+        setNum((num) => num + 1) // 最新状態の変数の値が使われる
     }
 
     return (
